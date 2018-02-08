@@ -26,7 +26,6 @@ const Nav = () => {
         <Router>
           <div>
             <Route exact path="/" component={App} />
-            <Route exact path="/emails" component={EmailPage} />
             <Route exact path="/contact" component={ContactSection} />
             <Route exact path="/about" component={AboutSection} />
             <Route exact path="/projects" component={ProjectsSection} />
