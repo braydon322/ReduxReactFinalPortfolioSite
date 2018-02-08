@@ -13,6 +13,8 @@ gem 'pry'
 gem 'rack-cors'
 gem 'httparty'
 
+ruby '2.3.4'
+
 gem 'pony'
 
 group :development, :test do
