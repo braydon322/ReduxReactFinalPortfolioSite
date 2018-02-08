@@ -6,6 +6,7 @@ module Api
       end
 
       def create
+        SendEmail.now(params[:email])
         @email = Email.create(email_params)
         @email.counter = 0;
 

@@ -28,7 +28,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index:-1;
+  z-index:1;
 }
 
 #aboutText {
@@ -46,8 +46,16 @@ html {
 .aboutBackground {
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  z-index: -100
+  position: -1;
+  position: fixed;
+}
+
+.aboutBackground img {
+  z-index: 1;
+}
+
+.aboutBackground a {
+  z-index: 1;
 }
 
 #profPic {
@@ -97,18 +105,13 @@ html {
   width: 100vw;
   height: 100vh;
   text-align: center;
-
   font-family: 'Helvetica';
-
   color: #F2F4F7;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-
-  z-index: 100;
+  z-index: -1;
 }
 
 .logo {
@@ -126,6 +129,7 @@ h5:hover {
 h5 {
   font-size: 1.25em;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 h6 {
@@ -135,6 +139,10 @@ h6 {
   font-size: 1.25em;
   letter-spacing: 2px;
   font-family: 'Anonymous Pro', monospace;
+}
+
+.social {
+  width: 2vw;
 }
 
 .homeLink {

@@ -46,7 +46,7 @@ class ProjectsSection extends Component {
 
 
   getLi(){
-  return <div class="repoDiv">
+  return <div className="repoDiv">
               {this.state.repo.map(function(repository, index){
                     return <a href= {repository.url} key={index}>{repository.name}<br></br></a>
               })}
